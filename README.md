@@ -87,6 +87,6 @@ Proof size: XXX KB
 Note that the execution may take a while, specially for large batches. For the default execution (n= 4, h = 2), the processing time is expected to be around 2 minutes.
 
 ---
-# License
+## License
 
 This work is released under the MIT License.
