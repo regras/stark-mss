@@ -35,15 +35,14 @@ sudo apt install -y git build-essential
 
 # Install rustup (Rust toolchain manager)
 sudo apt install -y rustup
-## Build Instructions
 ```
 1. *Clone the repository*
-```
+```bash
 git clone https://github.com/regras/stark-mss.git
 cd stark-mss
 ```
 2. *Building the project*
-```
+```bash
 cargo build
 ```
 
@@ -69,7 +68,7 @@ All specified in top-level `Cargo.toml`. The implementation associated with this
 
 In the `examples` crate, run the `mss` example by executing:
 
-```
+```bash
 cargo run mss -n X -h Y
 ```
 
@@ -77,7 +76,7 @@ Where the flags `-n` and `-h` respectively consist in the number of MSS signatur
 
 If the tests are sucessful, the program should output:
 
-```
+```bash
 Generated 4 private-public key pairs in XXX ms
 Signed 4 messages in XXX ms
 Verified 4 signatures in XXX ms
