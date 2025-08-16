@@ -12,7 +12,7 @@ The following badges are used to guide reviewers:
 - **Selo D - Available**: All source code, build instructions and documentation are present in this repository.  
 - **Selo F - Functional**: The artifact has been tested on Linux and reproduces the results reported in the paper.
 
-## Prerequisites
+## Dependencies
 
 - Ubuntu (or another Linux distribution)
 - [Rust](https://www.rust-lang.org/tools/install) (via `rustup`)
@@ -74,7 +74,7 @@ Where the flags `-n` and `-h` respectively consist in the number of MSS signatur
 
 If the tests are sucessful, the program should output:
 
-```bash
+```
 Generated 4 private-public key pairs in XXX ms
 Signed 4 messages in XXX ms
 Verified 4 signatures in XXX ms
