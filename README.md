@@ -34,12 +34,12 @@ sudo apt install -y git build-essential
 # Install rustup (Rust toolchain manager)
 sudo apt install -y rustup
 ```
-1. *Clone the repository*
+1. Clone the repository:
 ```bash
 git clone https://github.com/regras/stark-mss.git
 cd stark-mss
 ```
-2. *Building the project*
+2. Building the project:
 ```bash
 cargo build
 ```
