@@ -12,8 +12,6 @@ The following badges are used to guide reviewers:
 - **Selo D - Available**: All source code, build instructions and documentation are present in this repository.  
 - **Selo F - Functional**: The artifact has been tested on Linux and reproduces the results reported in the paper.
 
-# Basic Information
-
 ## Prerequisites
 
 - Ubuntu (or another Linux distribution)
