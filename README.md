@@ -46,7 +46,7 @@ cargo build
 
 ### Overview
 
-The workspace crates are organized as follows (all fetched automatically by Cargo):
+The workspace crates are organized as follows (all fetched automatically by `cargo`):
 
 ```
 utils         // Shared traits, macros and I/O/error‑handling, RNG integration.
