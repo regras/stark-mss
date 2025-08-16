@@ -14,26 +14,37 @@ The following badges are used to guide reviewers:
 
 # Basic Information
 
-## Dependencies (Ubuntu 20.04+)
+## Prerequisites
 
-**Rust toolchain:** requires Rust ≥ 1.87 (`rust-version = "1.87"`), pkg-config ≥ 0.29.1 (`pkg-config-version = "0.29.2"`).
+- Ubuntu (or another Linux distribution)
+- [Rust](https://www.rust-lang.org/tools/install) (via `rustup`)
+- Git
+- Build tools (`gcc`, `make`, etc.)
 
-We recommend using ``rustup`` for the toolchain installation:
-- `rustc` (the compiler);
-- `cargo` (the package manager);
-- And other related tools.
+## Environment Setup
 
+Run the following commands in order to prepare the environment:
+
+```bash
+# Update system packages
+sudo apt update
+sudo apt upgrade -y
+
+# Install required dependencies
+sudo apt install -y git build-essential
+
+# Install rustup (Rust toolchain manager)
+sudo apt install -y rustup
 ## Build Instructions
-
+```
 1. *Clone the repository*
 ```
-git clone https://github.com/facebook/winterfell.git
-cd winterfell
+git clone https://github.com/regras/stark-mss.git
+cd stark-mss
 ```
 2. *Building the project*
 ```
-make build
-# ⇢ runs: cargo build
+cargo build
 ```
 
 ### Overview
