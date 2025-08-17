@@ -70,7 +70,7 @@ In the `examples` crate, run the `mss` example by executing:
 cargo run mss -n X -h Y
 ```
 
-Where the flags `-n` and `-h` respectively consist in the number of MSS signatures to be aggregated and the height of associated Merkle tree. Note that the scheme only supports a number of signatures that is a power of two, so that the associated Merkle tree height is given by log(n). If no flags are specified, the default option is n = 4, h = 2.
+Where the flags `-n` and `-h` respectively consist in the number of MSS signatures to be aggregated and the height of associated Merkle tree. The scheme only supports a number of signatures that is a power of two, so that the associated Merkle tree height is given by log(n). If no flags are specified, the default option is n = 4, h = 2.
 
 If the tests are sucessful, the program should output:
 
