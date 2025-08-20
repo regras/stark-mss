@@ -94,7 +94,6 @@ The examples included generate ephemeral key pairs and sign toy messages; theref
 
 The security of the signing scheme depends critically on the underlying hash function, Rescue128, which provides the collision resistance and preimage resistance necessary for the soundness of the construction. Any weakness in this hash function would directly undermine the guarantees of the signature scheme. Furthermore, the design remains inherently stateful: each one-time key pair must be used strictly once, as reuse of ephemeral keys compromises the unforgeability of the algorithm.
   
----
 ## License
 
 This work is released under the MIT License.
