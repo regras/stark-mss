@@ -88,7 +88,9 @@ Proof size: XXX KB
 
 ## Security Recommendations
 
-This repository is a research prototype and is not intended for production use, but solely for experimentation and academic validation. Its primary purpose is to demonstrate the feasibility of scalable batch verification for post-quantum signatures, not to serve as a hardened cryptographic library. The examples included generate ephemeral key pairs and sign toy messages; therefore, real secrets or confidential data should never be used in this context. Any execution should be understood as experimental, with outputs such as timings and proof sizes being suitable only for benchmarking and reproducibility of the associated research paper.
+This repository is a research prototype and is not intended for production use, but solely for experimentation and academic validation. Its primary purpose is to demonstrate the feasibility of scalable batch verification for post-quantum signatures, not to serve as a hardened cryptographic library. 
+
+The examples included generate ephemeral key pairs and sign toy messages; therefore, real secrets or confidential data should never be used in this context. Any execution should be understood as experimental, with outputs such as timings and proof sizes being suitable only for benchmarking and reproducibility of the associated research paper.
 
 The security of the signing scheme depends critically on the underlying hash function, Rescue128, which provides the collision resistance and preimage resistance necessary for the soundness of the construction. Any weakness in this hash function would directly undermine the guarantees of the signature scheme. Furthermore, the design remains inherently stateful: each one-time key pair must be used strictly once, as reuse of ephemeral keys compromises the unforgeability of the algorithm.
   
