@@ -14,7 +14,7 @@ The following badges are used to guide reviewers:
 
 ## Dependencies
 
-- Ubuntu (or another Linux distribution) [20.04.4 LTS]
+- Ubuntu (or another Linux distribution) (20.04.4 LTS)
 - [Rust](https://www.rust-lang.org/tools/install) (via `rustup`) (v1.84.1)
 - Git (v2.34.1)
 - Build tools (`gcc`, `make`, etc.) 
