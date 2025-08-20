@@ -1,4 +1,4 @@
-## Introduction
+## Basic Information
 
 This repository is associated with the research project submitted to the "Workshop de Trabalhos de Iniciação Científica e Graduação" (WTICG) of the "XXV Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais" (SBSeg 2025).
 
@@ -19,7 +19,7 @@ The following badges are used to guide reviewers:
 - Git
 - Build tools (`gcc`, `make`, etc.)
 
-## Environment Setup
+## Installation
 
 Run the following commands in order to prepare the environment:
 
@@ -62,15 +62,15 @@ examples      // Collection of default examples.
 
 All specified in top-level `Cargo.toml`. The implementation associated with this work is available in the `examples` crate as `mss`.
   
-### Minimal test
+## Quick Test
 
 In the `examples` crate, run the `mss` example by executing:
 
 ```bash
-cargo run mss -n X -h Y
+cargo run mss -n 4 -h 2
 ```
 
-Where the flags `-n` and `-h` respectively consist in the number of MSS signatures to be aggregated and the height of associated Merkle tree. The scheme only supports a number of signatures that is a power of two, so that the associated Merkle tree height is given by log(n). If no flags are specified, the default option is n = 4, h = 2.
+Where the flags `-n` and `-h` flags respectively consist in the number of MSS signatures to be aggregated and the height of associated Merkle tree. The scheme only supports a number of signatures that is a power of two, so that the associated Merkle tree height is given by log(n). If no flags are specified, the default option is `n = 4`, `h = 2`.
 
 If the tests are sucessful, the program should output:
 
@@ -84,8 +84,15 @@ Proof generated in XXX ms
 Proof size: XXX KB
 ```
 
-Note that the execution may take a while, specially for large batches. For the default execution (n= 4, h = 2), the processing time is expected to be around 2 minutes.
+Note that the execution may take a while, specially for large batches. For the default execution (`n= 4`, `h = 2`), the processing time is expected to be between 4 and 5 minutes depending on the available hardware.
 
+## Security Recommendations
+
+This repository is a research prototype and is not production-ready. It should be used strictly for experimentation.
+- The examples generate temporary key pairs and sign toy messages. Do not use real secrets or sensitive data.
+- The security of the signing scheme (MSS) relies on the underlying hash function (Rescue128).
+- The scheme is stateful. Each one-time key pair must be used only once. Reusing ephemeral keys compromises security.
+  
 ---
 ## License
 
