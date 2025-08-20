@@ -29,7 +29,8 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install required dependencies
-sudo apt install -y git build-essential
+sudo apt install -y git
+sudo apt install -y build-essential
 
 # Install rustup (Rust toolchain manager)
 sudo apt install -y rustup
